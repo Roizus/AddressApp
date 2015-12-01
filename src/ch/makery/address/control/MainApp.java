@@ -2,6 +2,9 @@ package ch.makery.address.control;
 
 import java.io.IOException;
 
+
+
+
 import ch.makery.address.model.Person;
 import ch.makery.address.view.PersonOverviewController;
 import ch.makery.address.view.PersonEditDialogController;
@@ -10,10 +13,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+/**
+ * @version 1.0
+ * @author Alvaro
+ * @see Person
+ */
 
 public class MainApp extends Application {
 	
@@ -42,7 +52,6 @@ public class MainApp extends Application {
 
     /**
      * Returns the data as an observable list of Persons. 
-     * @return
      */
     public ObservableList<Person> getPersonData() {
         return personData;
@@ -58,6 +67,8 @@ public class MainApp extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
 
+        this.primaryStage.getIcons().add(new Image("file:resources/images/Address_Book.png"));
+        
         initRootLayout();
 
         showPersonOverview();
@@ -106,7 +117,6 @@ public class MainApp extends Application {
     
 	/**
 	 * Returns the main stage.
-	 * @return
 	 */
 	public Stage getPrimaryStage() {
 		return primaryStage;

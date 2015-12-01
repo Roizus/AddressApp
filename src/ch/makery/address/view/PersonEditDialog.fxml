@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="335.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
+<AnchorPane prefHeight="335.0" prefWidth="500.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
    <children>
       <GridPane layoutX="13.0" layoutY="9.0" prefHeight="249.0" prefWidth="467.0">
         <columnConstraints>
@@ -35,7 +35,7 @@
             <TextField fx:id="birthdayField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <Button layoutX="305.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="27.0" prefWidth="85.0" text="OK" />
+      <Button defaultButton="true" layoutX="305.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="27.0" prefWidth="85.0" text="OK" />
       <Button layoutX="395.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="27.0" prefWidth="85.0" text="Cancel" />
    </children>
 </AnchorPane>
