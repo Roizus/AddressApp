@@ -12,7 +12,7 @@ import ch.makery.address.util.DateUtil;
 /**
  * Dialog to edit details of a person.
  * 
- * @author Alvaro Roizo
+ * @author Marco Jakob
  */
 public class PersonEditDialogController {
 
@@ -148,11 +148,11 @@ public class PersonEditDialogController {
             return true;
         } else {
             // Show the error message.
-            Dialogs.create()
-                .title("Invalid Fields")
-                .masthead("Please correct invalid fields")
-                .message(errorMessage)
-                .showError();
+        	Dialogs.create()
+		        .title("Invalid Fields")
+		        .masthead("Please correct invalid fields")
+		        .message(errorMessage)
+		        .showError();
             return false;
         }
     }
